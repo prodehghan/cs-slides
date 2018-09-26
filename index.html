@@ -64,7 +64,6 @@
                     <li>Unified type system</li>
                     <li>Classes and interfaces</li>
                     <li>Methods, properties, events</li>
-                    <li>Supports functional programming</li>
                 </ul>
             </section>
 
@@ -87,8 +86,74 @@
                 </ul>
             </section>
 
-            <section data-background-color="#390">
-                <h2>Let's see some code!!</h2>
+            <section class="items">
+                <h2>
+                    Declarative Programming
+                </h2>
+                <ul>
+                    <li>
+                        Language-integrated query (LINQ)
+                        <ul>
+                            <li>Fluent-syntax (Extension methods and lambda expressions)</li>
+                            <li>Query-syntax (declarative)</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="items">
+                <h2 style="width: 130%">Asynchronous Programming</h2>
+                <ui>
+                    <li>Tasks</li>
+                    <li>async/await</li>
+                </ui>
+            </section>
+
+            <section class="items">
+                <h2>Memory Management</h2>
+                <ul>
+                    <li>Garbage collector</li>
+                    <li>No <code style="color: #bfbfff">delete</code> keyword</li>
+                </ul>
+            </section>
+
+            <section data-background-image="img/ms.net-background.png" data-background-transition="zoom">
+            </section>
+
+            <section class="items">
+                <h2>.NET Platform</h2>
+                <ul>
+                    <li>Developmentd tools (compiler)</li>
+                    <li>Runtime services (CLR)</li>
+                    <li>Class library</li>
+                </ul>
+            </section>
+
+            <section class="items">
+                <h2>.NET Platform Variations</h2>
+                <ul>
+                    <li>.NET Framework</li>
+                    <li>.NET Core</li>
+                    <li>Mono</li>
+                    <li>Xamarin</li>
+                </ul>
+            </section>
+
+            <section data-background-color="#360">
+                <h2>Let's do it!</h2>
+            </section>
+
+            <section>
+                <h2>Creating first application</h2>
+                <ul>
+                    <li>Install .NET Core</li>
+                    <li>Open a terminal window (PowerShell/Ccommand Prompt/bash)</li>
+                    <code>
+                        dotnet new console
+                        dotnet run
+                    </code>
+                </ul>
+
             </section>
 
             <section>
@@ -120,11 +185,12 @@
     <script src="js/reveal.js"></script>
 
     <script>
-        const itemsSection = $('section.items');
-        itemsSection.attr('data-autoslide', '1000');
-        const lis = itemsSection.find('li');
-        lis.addClass('fragment fade-right');
-        lis.filter(':last-child').attr('data-autoslide', '0');
+        const itemsSections = $('section.items');
+        itemsSections.attr('data-autoslide', '1000');
+        itemsSections.find('li').addClass('fragment fade-right');
+        itemsSections.each(function () {
+            $(this).find('li').last().attr('data-autoslide', '0');
+        });
 
         // More info about config & dependencies:
         // - https://github.com/hakimel/reveal.js#configuration
