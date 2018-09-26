@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <title>reveal.js</title>
+    <title>C# Programming Language</title>
 
     <link rel="stylesheet" href="css/reveal.css">
     <link rel="stylesheet" href="css/theme/league.css" id="theme">
@@ -26,7 +26,7 @@
 <body>
     <div class="reveal">
         <div class="slides">
-            <section>
+            <section id="start" data-transition="zoom">
                 <h1 style="margin-bottom: 0;">C#</h1>
                 <h3>
                     <span style="background: rgba(0,0,0,0.2); padding: .5rem 2rem; border-radius: 0.5rem;">
@@ -47,7 +47,7 @@
                 </div>
             </section>
 
-            <section>
+            <section class="items">
                 <h2>C# Programming Language</h2>
                 <ul>
                     <li>General-purpose, type-safe, object-oriented</li>
@@ -55,6 +55,35 @@
                     <li>Supports dynamic typing</li>
                     <li>Supports declarative programming</li>
                     <li>Supports asynchronous programming</li>
+                </ul>
+            </section>
+
+            <section class="items">
+                <h2>Object Orientation</h2>
+                <ul>
+                    <li>Unified type system</li>
+                    <li>Classes and interfaces</li>
+                    <li>Methods, properties, events</li>
+                    <li>Supports functional programming</li>
+                </ul>
+            </section>
+
+            <section class="items">
+                <h2>Type Safety</h2>
+                <ul>
+                    <li>Compile-time static typing</li>
+                    <li>Run-time type safety</li>
+                    <li>Strongly typed</li>
+                    <li><code style="color: #bfbfff">dynamic</code> keyword</li>
+                </ul>
+            </section>
+
+            <section class="items">
+                <h2>Functional Programming</h2>
+                <ul>
+                    <li>Functions as values (delegate)</li>
+                    <li>Anonymous methods and lambda expressions</li>
+                    <li>Captured local variables</li>
                 </ul>
             </section>
 
@@ -86,15 +115,23 @@
         </div>
     </div>
 
+    <script src="lib/js/jquery-3.3.1.min.js"></script>
     <script src="lib/js/head.min.js"></script>
     <script src="js/reveal.js"></script>
 
     <script>
+        const itemsSection = $('section.items');
+        itemsSection.attr('data-autoslide', '1000');
+        const lis = itemsSection.find('li');
+        lis.addClass('fragment fade-right');
+        lis.filter(':last-child').attr('data-autoslide', '0');
+
         // More info about config & dependencies:
         // - https://github.com/hakimel/reveal.js#configuration
         // - https://github.com/hakimel/reveal.js#dependencies
         Reveal.initialize({
             history: true,
+            transition: "convex",
 
             dependencies: [{
                     src: 'plugin/markdown/marked.js'
@@ -136,6 +173,10 @@
         .reveal h6 {
             font-family: Calibri;
             text-transform: none;
+        }
+
+        .items {
+            text-align: left;
         }
 
         body.show-logo .reveal::before {
