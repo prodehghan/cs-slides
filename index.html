@@ -147,23 +147,28 @@
                 <h2>Creating first application</h2>
                 <ul>
                     <li>Install .NET Core</li>
-                    <li>Open a terminal window (PowerShell/Ccommand Prompt/bash)</li>
-                    <code>
-                        dotnet new console
-                        dotnet run
+                    <li>Open a terminal window<br /> (PowerShell/Ccommand Prompt/bash)</li>
+                    <pre class="bash"><code data-trim>
+                        $ md HelloCS
+                        $ cd HelloCS
+                        $ dotnet new console
+                        $ dotnet run
                     </code>
+                    </pre>
+
                 </ul>
 
             </section>
 
             <section>
-                <h2>Analyzing first program</h2>
+                <h2>Analyzing the program</h2>
                 <div data-block-type="code" class="sl-block">
                     <div class="sl-block-content">
-                        <pre class="cs"><code data-trim>
+                        <pre class="cs">
+                            <code data-trim>
                                 using System;
 
-                                namespace dotnet
+                                namespace HelloCS
                                 {
                                     class Program
                                     {
@@ -173,7 +178,8 @@
                                         }
                                     }
                                 }
-                            </code></pre>
+                            </code>
+                        </pre>
                     </div>
                 </div>
             </section>
@@ -241,7 +247,8 @@
             text-transform: none;
         }
 
-        .items {
+        .items,
+        section.left {
             text-align: left;
         }
 
