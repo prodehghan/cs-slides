@@ -73,7 +73,7 @@
                     <li>Compile-time static typing</li>
                     <li>Run-time type safety</li>
                     <li>Strongly typed</li>
-                    <li><code style="color: #bfbfff">dynamic</code> keyword</li>
+                    <li><code class="blue"></code>dynamic</code> keyword</li>
                 </ul>
             </section>
 
@@ -113,17 +113,16 @@
                 <h2>Memory Management</h2>
                 <ul>
                     <li>Garbage collector</li>
-                    <li>No <code style="color: #bfbfff">delete</code> keyword</li>
+                    <li>No <code class="blue">delete</code> keyword</li>
                 </ul>
             </section>
-
             <section data-background-image="img/ms.net-background.png" data-background-transition="zoom">
             </section>
 
             <section class="items">
                 <h2>.NET Platform</h2>
                 <ul>
-                    <li>Developmentd tools (compiler)</li>
+                    <li>Development tools (compiler)</li>
                     <li>Runtime services (CLR)</li>
                     <li>Class library</li>
                 </ul>
@@ -182,6 +181,139 @@
                         </pre>
                     </div>
                 </div>
+            </section>
+
+            <section>
+                <h2><code class="blue">Main</code> Method</h2>
+                <ul>
+                    <li>Starting point of an executable</li>
+                    <li>Passing command line arguments</li>
+                </ul>
+            </section>
+
+            <section>
+
+                <h2>Namespaces</h2>
+
+                <ul>
+                    <li>Namespaces organize types</li>
+                    <li>Avoid type name collisions</li>
+                    <li><code class="blue">using</code> directive brings other namespaces’ types into scope</li>
+                    <li>Type full name</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Types</h2>
+                <ul>
+                    <li>C# is strongly typed</li>
+                    <li>Everything has a type</li>
+                    <li>We can define our own types</li>
+                    <li>Code you want to execute must live inside a type</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Variables</h2>
+
+                <div style="text-align: left">Variables hold a value</div>
+
+                <ul style="font-size: 0.8em">
+                    <li>They always have a type</li>
+                    <li>They must be assigned a value before they can be used</li>
+                    <li>Variable’s type usually determines how much memory it consumes</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Statements and Expressions</h2>
+                <ul style="font-size: 0.9em">
+                    <li>A statement is an instruction
+                        <ul>
+                            <li>A method is a series of instructions</li>
+                            <li>Statements end with semicolon</li>
+                            <li>Statements are executed in order they appear</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Expressions are parts of statements that produce a value
+                        <ul>
+                            <li>The may involve operators</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2> C# Built-In Types </h2>
+                <ul style="font-size: 0.8em">
+                    <li>
+                        Value types
+                        <ul>
+                            <li>
+                                Numeric
+                                <ul>
+                                    <li>Signed integer (sbyte, short, int, long)</li>
+                                    <li>Unsigned integer (byte, ushort, uint, ulong)</li>
+                                    <li>Real number (float, double, decimal)</li>
+                                </ul>
+                            </li>
+                            <li>Logical (bool)</li>
+                            <li>Character (char)</li>
+                        </ul>
+
+                    </li>
+                    <li>
+
+                        Reference types
+                        <ul>
+                            <li>String (string)</li>
+                            <li>Object (object)</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Primitive types: Predefined values types except decimal
+                    </li>
+
+                </ul>
+
+            </section>
+
+            <section>
+                <h2>C# Built-In Types</h2>
+
+                <table style="font-size: 0.6em">
+                    <thead>
+                        <tr>
+                            <th>C# Type</th>
+                            <th>.NET Framework Type</th>
+                            <th>C# Type</th>
+                            <th>.NET Framework Type</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>bool</td>
+                            <td>System.Boolean</td>
+                            <td>unit</td>
+                            <td>System.Unt32</td>
+                        </tr>
+                        <tr>
+                            <td>byte</td>
+                            <td>System.Byte</td>
+                            <td>long</td>
+                            <td>System.Int64</td>
+                        </tr>
+                        <tr>
+                            <td>sbyte</td>
+                            <td>System.SByte</td>
+                            <td>ulong</td>
+                            <td>System.Unit64</td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
             </section>
         </div>
     </div>
@@ -250,6 +382,10 @@
         .items,
         section.left {
             text-align: left;
+        }
+
+        code.blue {
+            color: #b3b3fd
         }
 
         body.show-logo .reveal::before {
