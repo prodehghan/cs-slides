@@ -146,7 +146,7 @@
                 <h2>Creating first application</h2>
                 <ul>
                     <li>Install .NET Core</li>
-                    <li>Open a terminal window<br /> (PowerShell/Ccommand Prompt/bash)</li>
+                    <li>Open a terminal window<br /> (PowerShell/Command Prompt/bash)</li>
                     <pre class="bash"><code data-trim>
                         $ md HelloCS
                         $ cd HelloCS
@@ -223,6 +223,14 @@
                     <li>They must be assigned a value before they can be used</li>
                     <li>Variable’s type usually determines how much memory it consumes</li>
                 </ul>
+                <pre class="cs">
+                    <code data-trim>
+                        int i;
+                        float x, y;
+                        string name = "Mohammad";
+                    </code>
+                </pre>
+
             </section>
 
             <section>
@@ -245,7 +253,48 @@
             </section>
 
             <section>
-                <h2> C# Built-In Types </h2>
+                <h2>Numeric Types (Part One)</h2>
+
+                <div style="text-align: left">
+                    Integers<br />
+
+                    <ul>
+                        <li>Signed (int, long, short, sbyte)</li>
+                        <li>Unsigned (uint, ulong, short, byte)</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h2>Numeric Types (Part Two)</h2>
+                <div style="text-align: left">
+                    Real numbers<br />
+                    <ul>
+                        <li>Floating point (float, double)</li>
+                        <li>Decimal (decimal)</li>
+                    </ul>
+            </section>
+
+            <section>
+                <h2>Numeric Literals</h2>
+                <div style="text-align: left">
+                    
+                </div>
+            </section>
+
+            <section>
+                <h2>Numeric Conversions</h2>
+            </section>
+
+            <section>
+                <h2>Boolean</h2>
+                <div style="text-align: left">
+
+                </div>
+            </section>
+
+            <section>
+                <h2> C# Built-In Types Summary</h2>
                 <ul style="font-size: 0.8em">
                     <li>
                         Value types
@@ -264,7 +313,6 @@
 
                     </li>
                     <li>
-
                         Reference types
                         <ul>
                             <li>String (string)</li>
@@ -294,27 +342,62 @@
                     <tbody>
                         <tr>
                             <td>bool</td>
-                            <td>System.Boolean</td>
+                            <td><strong>System.Boolean</strong></td>
                             <td>unit</td>
-                            <td>System.Unt32</td>
+                            <td><strong>System.UInt32</strong></td>
                         </tr>
                         <tr>
                             <td>byte</td>
-                            <td>System.Byte</td>
+                            <td><strong>System.Byte</strong></td>
                             <td>long</td>
-                            <td>System.Int64</td>
+                            <td><strong>System.Int64</strong></td>
                         </tr>
                         <tr>
                             <td>sbyte</td>
-                            <td>System.SByte</td>
+                            <td><strong>System.SByte</strong></td>
                             <td>ulong</td>
-                            <td>System.Unit64</td>
+                            <td><strong>System.UInt64</strong></td>
                         </tr>
-
-
+                        <tr>
+                            <td>char</td>
+                            <td><strong>System.Char</strong></td>
+                            <td>object</td>
+                            <td><strong>System.Object</strong></td>
+                        </tr>
+                        <tr>
+                            <td>decimal</td>
+                            <td><strong>System.Decimal</strong></td>
+                            <td>short</td>
+                            <td><strong>System.Int16</strong></td>
+                        </tr>
+                        <tr>
+                            <td>double</td>
+                            <td><strong>System.Double</strong></td>
+                            <td>ushort</td>
+                            <td><strong>System.UInt16</strong></td>
+                        </tr>
+                        <tr>
+                            <td>float</td>
+                            <td><strong>System.Single</strong></td>
+                            <td>string</td>
+                            <td><strong>System.String</strong></td>
+                        </tr>
+                        <tr>
+                            <td>int</td>
+                            <td><strong>System.Int32</strong></td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
                     </tbody>
                 </table>
             </section>
+
+            <!-- <section data-markdown>
+                <textarea data-template>
+
+                </textarea>
+            </section> -->
+
         </div>
     </div>
 
@@ -338,22 +421,22 @@
             transition: "convex",
 
             dependencies: [{
-                    src: 'plugin/markdown/marked.js'
-                },
-                {
-                    src: 'plugin/markdown/markdown.js'
-                },
-                {
-                    src: 'plugin/notes/notes.js',
-                    async: true
-                },
-                {
-                    src: 'plugin/highlight/highlight.js',
-                    async: true,
-                    callback: function () {
-                        hljs.initHighlightingOnLoad();
-                    }
+                src: 'plugin/markdown/marked.js'
+            },
+            {
+                src: 'plugin/markdown/markdown.js'
+            },
+            {
+                src: 'plugin/notes/notes.js',
+                async: true
+            },
+            {
+                src: 'plugin/highlight/highlight.js',
+                async: true,
+                callback: function () {
+                    hljs.initHighlightingOnLoad();
                 }
+            }
             ]
         });
         Reveal.addEventListener('slidechanged', function (event) {
