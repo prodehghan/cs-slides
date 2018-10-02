@@ -354,7 +354,7 @@
 
                     <pre class="cs"><code data-trim>
                         int million = 1_000_000; // underscore can be
-                                                // inserted anywhere (C# 7)
+                                                 // inserted anywhere (C# 7)
                         int x = 0x7f;            // 0x prefix: hexadecimal literal
                         byte b = 0b10000000;     // 0b prefix: binary literal (C# 7)
                         byte b2 = 0b1000_1000;
@@ -515,102 +515,104 @@
             </section>
 
             <section>
-                <h2> C# Built-In Types Summary</h2>
-                <ul style="font-size: 0.8em">
-                    <li>
-                        Value types
-                        <ul>
-                            <li>
-                                Numeric
-                                <ul>
-                                    <li>Signed integer (sbyte, short, int, long)</li>
-                                    <li>Unsigned integer (byte, ushort, uint, ulong)</li>
-                                    <li>Real number (float, double, decimal)</li>
-                                </ul>
-                            </li>
-                            <li>Logical (bool)</li>
-                            <li>Character (char)</li>
-                        </ul>
+                <section>
+                    <h2> C# Built-In Types Summary</h2>
+                    <ul style="font-size: 0.8em">
+                        <li>
+                            Value types
+                            <ul>
+                                <li>
+                                    Numeric
+                                    <ul>
+                                        <li>Signed integer (sbyte, short, int, long)</li>
+                                        <li>Unsigned integer (byte, ushort, uint, ulong)</li>
+                                        <li>Real number (float, double, decimal)</li>
+                                    </ul>
+                                </li>
+                                <li>Logical (bool)</li>
+                                <li>Character (char)</li>
+                            </ul>
 
-                    </li>
-                    <li>
-                        Reference types
-                        <ul>
-                            <li>String (string)</li>
-                            <li>Object (object)</li>
-                        </ul>
-                    </li>
-                    <li>
-                        Primitive types: Predefined values types except decimal
-                    </li>
+                        </li>
+                        <li>
+                            Reference types
+                            <ul>
+                                <li>String (string)</li>
+                                <li>Object (object)</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Primitive types: Predefined values types except decimal
+                        </li>
 
-                </ul>
+                    </ul>
 
-            </section>
+                </section>
 
-            <section>
-                <h2>C# Built-In Types</h2>
+                <section>
+                    <h2>C# Built-In Types</h2>
 
-                <table style="font-size: 0.6em">
-                    <thead>
-                        <tr>
-                            <th>C# Type</th>
-                            <th>.NET Framework Type</th>
-                            <th>C# Type</th>
-                            <th>.NET Framework Type</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>bool</td>
-                            <td><strong>System.Boolean</strong></td>
-                            <td>unit</td>
-                            <td><strong>System.UInt32</strong></td>
-                        </tr>
-                        <tr>
-                            <td>byte</td>
-                            <td><strong>System.Byte</strong></td>
-                            <td>long</td>
-                            <td><strong>System.Int64</strong></td>
-                        </tr>
-                        <tr>
-                            <td>sbyte</td>
-                            <td><strong>System.SByte</strong></td>
-                            <td>ulong</td>
-                            <td><strong>System.UInt64</strong></td>
-                        </tr>
-                        <tr>
-                            <td>char</td>
-                            <td><strong>System.Char</strong></td>
-                            <td>object</td>
-                            <td><strong>System.Object</strong></td>
-                        </tr>
-                        <tr>
-                            <td>decimal</td>
-                            <td><strong>System.Decimal</strong></td>
-                            <td>short</td>
-                            <td><strong>System.Int16</strong></td>
-                        </tr>
-                        <tr>
-                            <td>double</td>
-                            <td><strong>System.Double</strong></td>
-                            <td>ushort</td>
-                            <td><strong>System.UInt16</strong></td>
-                        </tr>
-                        <tr>
-                            <td>float</td>
-                            <td><strong>System.Single</strong></td>
-                            <td>string</td>
-                            <td><strong>System.String</strong></td>
-                        </tr>
-                        <tr>
-                            <td>int</td>
-                            <td><strong>System.Int32</strong></td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                        </tr>
-                    </tbody>
-                </table>
+                    <table style="font-size: 0.6em">
+                        <thead>
+                            <tr>
+                                <th>C# Type</th>
+                                <th>.NET Framework Type</th>
+                                <th>C# Type</th>
+                                <th>.NET Framework Type</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>bool</td>
+                                <td><strong>System.Boolean</strong></td>
+                                <td>unit</td>
+                                <td><strong>System.UInt32</strong></td>
+                            </tr>
+                            <tr>
+                                <td>byte</td>
+                                <td><strong>System.Byte</strong></td>
+                                <td>long</td>
+                                <td><strong>System.Int64</strong></td>
+                            </tr>
+                            <tr>
+                                <td>sbyte</td>
+                                <td><strong>System.SByte</strong></td>
+                                <td>ulong</td>
+                                <td><strong>System.UInt64</strong></td>
+                            </tr>
+                            <tr>
+                                <td>char</td>
+                                <td><strong>System.Char</strong></td>
+                                <td>object</td>
+                                <td><strong>System.Object</strong></td>
+                            </tr>
+                            <tr>
+                                <td>decimal</td>
+                                <td><strong>System.Decimal</strong></td>
+                                <td>short</td>
+                                <td><strong>System.Int16</strong></td>
+                            </tr>
+                            <tr>
+                                <td>double</td>
+                                <td><strong>System.Double</strong></td>
+                                <td>ushort</td>
+                                <td><strong>System.UInt16</strong></td>
+                            </tr>
+                            <tr>
+                                <td>float</td>
+                                <td><strong>System.Single</strong></td>
+                                <td>string</td>
+                                <td><strong>System.String</strong></td>
+                            </tr>
+                            <tr>
+                                <td>int</td>
+                                <td><strong>System.Int32</strong></td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
             </section>
 
             <section>
@@ -639,17 +641,22 @@
                 <div class="left">
                     Multiple variables under the same name
 
-                    <ui>
+                    <ul>
                         <li>Accessible through index</li>
                         <li>Index starts from zero</li>
                         <li>All element have the same type</li>
                         <li><code class="blue">new</code> is used to create an array</li>
-                        <li>May have more than one dimension</li>
+                        <li><code>Length</code> property</li>
+                        <li>May have more than one dimension
+                            <ul>
+                                <li>
+                                    <code>Length</code> and <code>GetLength()</code>
+                                </li>
+                            </ul>
+                        </li>
                         <li>May be jagged</li>
-                        <li><code>Length</code></li>
                         <li>Array class</li>
-                    </ui>
-
+                    </ul>
 
                 </div>
             </section>
