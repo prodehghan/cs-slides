@@ -628,11 +628,134 @@
                 </ul>
             </section>
 
-            <!-- <section data-markdown>
-                <textarea data-template>
+            <section>
+                <h2>Arrays</h2>
+                <div class="left">
+                    Multiple variables under the same name
 
-                </textarea>
-            </section> -->
+                    <ui>
+                        <li>Accessible through index</li>
+                        <li>Index starts from zero</li>
+                        <li>All element have the same type</li>
+                        <li><code class="blue">new</code> is used to create an array</li>
+                        <li>May have more than one dimension</li>
+                        <li>May be jagged</li>
+                        <li><code>Length</code></li>
+                        <li>Array class</li>
+                    </ui>
+
+
+                </div>
+            </section>
+
+            <section>
+                <h2>Jumping Statements</h2>
+                <div class="left">
+                    <ul>
+                        <li>break</li>
+                        <li>continue</li>
+                        <li>goto</li>
+                        <li>return</li>
+                        <li>throw</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h2>Methods</h2>
+                <div class="left" style="font-size: 0.9em">
+                    <ul>
+                        <li>Methods define operations and behaviors</li>
+                        <li>Every method has a return type
+
+                            <ul>
+                                <li>void if no return value</li>
+                                <li>return is used to exit the method and/or return a value</li>
+                                <li>Multiple return statements are allowed</li>
+                            </ul>
+                        </li>
+                        <li>Every method has zero or more parameters</li>
+                        <li>Methods can be called recursively</li>
+                        <li>Variables defined inside a method are called local variables</li>
+                    </ul>
+                </div>
+
+            </section>
+
+            <section>
+                <section>
+                    <h2>Local Variable Scope</h2>
+                    <div class="left">
+                        <ul>
+                            <li>Local variables are accessible after definition</li>
+                            <li>Every code block defines a scope for local variables</li>
+                            <li>Local variables defined in outer scope are accessible in inner scope</li>
+                            <li>A variable cannot be defined with the same name as another local variable in outer
+                                scope</li>
+                        </ul>
+                    </div>
+                </section>
+                <section>
+                    <pre class="cs"><code data-trim>
+                        static void Main(string[] args)
+                        {
+                            int a = 1;
+                         
+                            {
+                                int x = 10, y = 5;
+                                Console.WriteLine(x + " " + y);
+                         
+                                int a;          // Error. Already defined in outer scope
+                            }
+                         
+                            {
+                                int x = 30;            // Valid.
+                                Console.WriteLine(a);  // Valid.
+                                Console.WriteLine(x);  // Valid.
+                                Console.WriteLine(y);  // Error. Not accessible
+                            }
+                        }
+                    </code></pre>
+
+                </section>
+            </section>
+
+            <section>
+                <h2>Implicitly Typed Local Variable</h2>
+                <ul>
+                    <li><code class="blue">var</code> keyword</li>
+                    <li>Must be assigned a value on declaration</li>
+                    <li>Statically typed</li>
+                    <li>They are mandatory when using anonymous types</li>
+                </ul>
+
+            </section>
+
+            <section data-background-color="#a25" data-background-transition="zoom" data-transition="zoom">
+                <h2>Object Oriented Programming</h2>
+            </section>
+
+            <section>
+                <h2>Class</h2>
+                <div class="left">
+                    <ul>
+                        <li>A class is one kind of a type</li>
+                        <li>A class groups variables and operations</li>
+                        <li>A class defines what an object looks like</li>
+                        <li>Objects are instances of a class</li>
+                        <li>Every method must be inside of a class</li>
+                        <li>Assess modifiers control the visibility of members of class from outside</li>
+                        <li>Objects are created with new operator.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h2>Class Members</h2>
+                <div class="left">
+                    
+                </div>
+            </section>
 
         </div>
     </div>
