@@ -745,9 +745,54 @@
                     <h2>Methods Parameters</h2>
                     <div class="left">
                         <ul>
-                            <li></li>
+                            <li>They are local to the method</li>
+                            <li>By default, method parameters are "pass by value"</li>
+                            <li>Can be optional (by having a default value)</li>
+                            <li><code>ref</code> modifier: "pass by reference" - in/out parameter</li>
+                            <li><code>out</code> modifier: output parameter (also "pass by reference")</li>
                         </ul>
                     </div>
+                </section>
+
+                <section data-transition="convex-in fade-out">
+                    <h2><code>ref</code> Modifier</h2>
+
+                    <pre class="cs"><code data-trim>
+                        static void Foo(ref int p)
+                        {
+                            p = p + 1; // Increment p by 1
+                            Console.WriteLine(p); // Write p to screen
+                        }
+
+                        static void Main()
+                        {
+                            int x = 8;
+                            Foo(ref x); // Ask Foo to deal directly with x
+                            Console.WriteLine(x); // x is now 9
+                        }
+                    </code></pre>
+                </section>
+
+                <section data-transition="fade-in convex-out">
+                    <pre class="cs"><code data-trim>
+                        static void Swap(ref string a, ref string b)
+                        {
+                            string temp = a;
+                            a = b;
+                            b = temp;
+                        } 
+                    </code></pre>
+                </section>
+
+                <section>
+                    <h2>Implicitly Typed Local Variable</h2>
+                    <ul>
+                        <li><code class="blue">var</code> keyword</li>
+                        <li>Must be assigned a value on declaration</li>
+                        <li>Statically typed</li>
+                        <li>They are mandatory when using anonymous types</li>
+                    </ul>
+
                 </section>
 
             </section>
@@ -791,14 +836,6 @@
             </section>
 
             <section>
-                <h2>Implicitly Typed Local Variable</h2>
-                <ul>
-                    <li><code class="blue">var</code> keyword</li>
-                    <li>Must be assigned a value on declaration</li>
-                    <li>Statically typed</li>
-                    <li>They are mandatory when using anonymous types</li>
-                </ul>
-
             </section>
 
             <section data-background-color="#a25" data-background-transition="zoom" data-transition="zoom">
