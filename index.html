@@ -851,8 +851,10 @@
                         <li>They are mandatory when using anonymous types</li>
                     </ul>
 
-                    <pre class="cs"><code data-trim>
+                    <pre class="cs" style="width: 100%"><code data-trim>
                         var i = 10;
+                        i = 1.1; // Error: Cannot implicitly convert type 'double' to 'int'.
+
                         var text = Console.ReadLine();
                         var words = text.Split();
 
