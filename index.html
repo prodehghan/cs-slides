@@ -732,13 +732,29 @@
                             <li>Every method has zero or more parameters</li>
                             <li>Methods can be called recursively</li>
                             <li>Variables defined inside a method are called local variables</li>
+                            <li>Methods can be overloaded</li>
                         </ul>
                     </div>
 
                 </section>
 
                 <section>
+                    <h2>Method Overloads</h2>
 
+                    <pre class="cs"><code data-trim>
+                        static float CalculateWeight(float mass, float gravity)
+                        {
+                            return mass * gravity;
+                        }
+                
+                        static float CalculateWeight(float mass)
+                        {
+                            return CalculateWeight(mass, 9.81);
+                        } 
+                    </code></pre>
+                </section>
+
+                <section>
                     <h2>Methods Parameters</h2>
                     <div class="left">
                         <ul>
