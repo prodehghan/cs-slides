@@ -873,9 +873,33 @@
 
                 </section>
 
-            </section>
+                <section>
+                    <h2>The <code>params</code> Modifier</h2>
 
-            <section>
+                    <pre class="cs" style="zoom: 90%"><code data-trim >
+                        static int Sum(params int[] ints)
+                        {
+                            int sum = 0;
+                            for (int i = 0; i < ints.Length; i++)
+                                sum += ints[i]; // Increase sum by ints[i]
+                            return sum;
+                        }
+                        static void Main()
+                        {
+                            int total = Sum(1, 2, 3, 4);
+                            Console.WriteLine(total); // 10
+                        }
+                    </code></pre>
+
+                    <div class="left">
+                        <ul>
+                            <li>Allows methods to accept any number of arguments</li>
+                            <li>Must be defined as an array</li>
+                            <li>Must be the last parameter</li>
+                        </ul>
+                    </div>
+                </section>
+
                 <section>
                     <h2>Local Variable Scope</h2>
                     <div class="left">
