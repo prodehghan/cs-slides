@@ -831,7 +831,16 @@
 
                 <section>
 
-                    <h2>Out Discards</h2>
+                    <h3>Out Variable Declaration (C# 7)</h3>
+
+                    <pre class="cs"><code data-trim>
+                        if(double.TryParse(str, out double d))
+                        {
+                            // do something
+                        }
+                    </code></pre>
+
+                    <h3>Out Discards (C# 7)</h3>
 
                     <pre class="cs"><code data-trim>
                         static bool IsDateValid(string dateString)
