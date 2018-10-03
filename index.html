@@ -647,7 +647,7 @@
                     <div class="left">
                         Multiple variables under the same name
 
-                        <ul>
+                        <ul style="font-size: 0.9em">
                             <li>Accessible through index</li>
                             <li>Index starts from zero</li>
                             <li>All element have the same type</li>
@@ -656,21 +656,52 @@
                             <li>May have more than one dimension
                                 <ul>
                                     <li>
-                                        <code>Length</code> and <code>GetLength()</code>
+                                        <code>Length</code> property gives the total length.
                                     </li>
+                                    <li><code>GetLength(&lt;dinemtion&gt;)</code></li>
                                 </ul>
                             </li>
                             <li>May be jagged</li>
-                            <li>Array class</li>
                         </ul>
 
                     </div>
                 </section>
 
-                <section>
+                <section data-transition="convex-in fade-out">
                     <h2>Array Initialization</h2>
-                    <!-- TODO -->
+
+                    <pre class="cs"><code data-trim>
+                        char[] vowels;        // Declare an array of characters
+                        vowels = new char[5]; // Initialize with an array of 5 characters
+            
+                        // Fill with values
+                        vowels[0] = 'a';
+                        vowels[1] = 'e';
+                        vowels[2] = 'i';
+                        vowels[3] = 'o';
+                        vowels[4] = 'u';
+                    </code></pre>
+
                 </section>
+
+                <section data-transition="fade-in">
+                    <h2>Array Initialization</h2>
+
+                    <pre class="cs"><code data-trim>
+                        char[] vowels;
+                        vowels = new char[] { 'a', 'e', 'i', 'o', 'u' };
+                    </code></pre>
+                    or
+                    <pre class="cs"><code data-trim>
+                            char[] vowels;
+                            vowels = new [] { 'a', 'e', 'i', 'o', 'u' };
+                    </code></pre>
+                    or
+                    <pre class="cs"><code data-trim>
+                        char[] vowels = {'a','e','i','o','u'};
+                    </code></pre>
+                </section>
+
             </section>
 
             <section>
@@ -795,6 +826,16 @@
 
                 </div>
             </section>
+
+            <!-- TODO
+            <section style="display: none">
+                <h2>Array class</h2>
+                
+                Array static methods
+
+                Tell this after generics and delegates
+
+            </section> -->
 
         </div>
     </div>
