@@ -741,7 +741,7 @@
                 <section>
                     <h2>Method Overloads</h2>
 
-                    <pre class="cs"><code data-trim>
+                    <pre class="cs"><code data-trim style="max-height: unset">
                         static float CalculateWeight(float mass, float gravity)
                         {
                             return mass * gravity;
@@ -749,8 +749,15 @@
                 
                         static float CalculateWeight(float mass)
                         {
-                            return CalculateWeight(mass, 9.81f);
-                        } 
+                            return CalculateWeight(mass, 9.807f);
+                        }
+
+                        static void Main()
+                        {
+                            float mass = 10;
+                            float weightOnEarth = CalculateWeight(mass);
+                            float weightOnMars = CalculateWeight(mass, 3.711f);
+                        }
                     </code></pre>
                 </section>
 
