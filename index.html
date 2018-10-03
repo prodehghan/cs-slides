@@ -774,6 +774,40 @@
                     </div>
                 </section>
 
+                <section>
+                    <h2>Optional Parameters</h2>
+
+                    <pre class="cs"><code data-trim>
+                        static void Main()
+                        {
+                            float mass = 10;
+                            float weightOnEarth = CalculateWeight(mass);
+                            float weightOnMars = CalculateWeight(mass, 3.711f);
+                        }
+                
+                        static float CalculateWeight(float mass, float gravity = 9.807f)
+                        {
+                            return mass * gravity;
+                        }
+                    </code></pre>
+                </section>
+
+                <section>
+                    <h2>Named Arguments</h2>
+                    <pre class="cs"><code data-trim>
+                        void Foo(int x, int y)
+                        {
+                            Console.WriteLine(x + ", " + y);
+                        }
+                
+                        void Test()
+                        {
+                            Foo(x: 1, y: 2); // 1, 2
+                            Foo(y: 2, x: 1); // 1, 2
+                        }
+                    </code></pre>
+                </section>
+
                 <section data-transition="convex-in fade-out">
 
                     <h2>The <code>ref</code> Modifier</h2>
