@@ -830,7 +830,20 @@
                 </section>
 
                 <section>
-                    <h2>Implicitly Typed Local Variable</h2>
+
+                    <h2>Out Discards</h2>
+
+                    <pre class="cs"><code data-trim>
+                        static bool IsDateValid(string dateString)
+                        {
+                            return DateTime.TryParse(dateString, out _);
+                        }
+                    </code></pre>
+                </section>
+
+                <section>
+
+                    <h3>Implicitly Typed Local Variable</h3>
                     <ul>
                         <li><code class="blue">var</code> keyword</li>
                         <li>Must be assigned a value on declaration</li>
