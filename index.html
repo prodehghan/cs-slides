@@ -851,6 +851,15 @@
                         <li>They are mandatory when using anonymous types</li>
                     </ul>
 
+                    <pre class="cs"><code data-trim>
+                        var i = 10;
+                        var text = Console.ReadLine();
+                        var words = text.Split();
+
+                        var n;             // Error!
+                        var x = 1, y = 10; // Error!
+                    </code></pre>
+
                 </section>
 
             </section>
