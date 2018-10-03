@@ -816,7 +816,15 @@
                     </div>
 
                     <pre class="cs"><code data-trim>
-                        
+                        Console.WriteLine("Please enter an integer:");
+                        int number;
+                        while(true)
+                        {
+                            string s = Console.ReadLine();
+                            if(int.TryParse(s, out number))
+                                break;
+                            Console.WriteLine("Not a valid number! Try again:");
+                        }
                     </code></pre>
 
                 </section>
