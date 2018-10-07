@@ -1066,9 +1066,58 @@
                                 Events, Indexers, Operators, Finalizers and Nested Types
                             </li>
                         </ul>
-
                     </div>
                 </section>
+                <section>
+                    <h2>Encapsulation</h2>
+                    <div class="left" style="font-size: 0.94em">
+                        <ul>
+                            <li>Access modifiers help us achieve encapsulation</li>
+                            <li>Hiding internal implementation details:
+                                <ul>
+                                    <li>Simplifies usage: others only see what they can use</li>
+                                    <li>Prevents others from making mistakes: they cannot use what they should not</li>
+                                    <li>Avoids corruption: by controlling access to internals</li>
+                                    <li>Makes changes easier: Internal implementation can be changed without affecting
+                                        others</li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </section>
+
+                <section>
+                    <h2>Access Modifiers</h2>
+                    <div class="left" style="font-size: 0.9em">
+                        <ul>
+                            <li><code>public</code>: everyone from outside can see and use the member</li>
+                            <li><code>private</code>: no access from outside</li>
+                            <li><code>protected</code>: only access from subclasses</li>
+                            <li><code>internal</code>: only access from inside of the assembly</li>
+                            <li style="font-size: 0.7em; color: #7c8191"><code>protected internal</code>: access from
+                                subclasses <strong>and</strong> others from inside of the assembly</li>
+                            <li style="font-size: 0.7em; color: #7c8191"><code>private protected</code>(C# 7.2) :
+                                access from subclasses within the assembly</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Fields and Properties</h2>
+                    <div class="left style=" font-size: 0.9em>
+                        <ul>
+                            <li>Variables defined in a class, are called fields</li>
+                            <li>Fields occupy memory</li>
+                            <li>Fields usually are defined as private</li>
+                            <li>Properties are accessor methods for class state</li>
+                            <li>Properties are usually wrappers around fields</li>
+                            <li>Properties can be read-only (only <em>getter</em>) or write-only (only <em>setter</em>)</li>
+                        </ul>
+                    </div>
+                </section>
+
                 <!-- <section>
                     <h2>Fields</h2>
                     
