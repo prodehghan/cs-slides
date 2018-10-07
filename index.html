@@ -1118,12 +1118,127 @@
                     </div>
                 </section>
 
+                <section>
+                    <h3>Static and Instance Class Members</h3>
+                    <div class="left" style="font-size: 0.8em;">
+                        <ul>
+                            <li>Instance (normal) members are accessible through instances of the class</li>
+                            <li>Static members are accessible without object creation, through class itself</li>
+                            <li>Static fields:
+                                <ul>
+                                    <li>
+                                        Only one, per class definition
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Instance fields:
+                                <ul>
+                                    <li>One, per created object</li>
+                                </ul>
+                            </li>
+                            <li>Instance methods:
+                                <ul>
+                                    <li>Have access to instance and static fields</li>
+                                </ul>
+                            </li>
+                            <li>Static methods
+                                <ul>
+                                    <li>Only have access to static fields</li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Reference Type/Value Type</h2>
+                    <div class="left" style="font-size: 0.9em">
+                        <ul>
+                            <li>Variables of reference types contains a reference to actual memory location</li>
+                            <li>Variables of value types contains the actual data</li>
+                            <li>Value types:
+                                <ul>
+                                    <li>Assignment makes a copy of the data</li>
+                                </ul>
+                            </li>
+                            <li>Reference types:
+                                <ul>
+                                    <li>Assignment make a copy of the reference</li>
+                                    <li>Multiple variable can reference the same data</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
                 <!-- <section>
-                    <h2>Fields</h2>
-                    
+                    <h2>Reference Type/Value Type</h2>
+                    <div class="left">
+                        <p>
+                            Value Types:
+                            <br />
+                            <ul>
+                                <li>
+                                    Primitive types (numeric types, char, and bool), 
+                                </li>
+                            </ul>
+                        </p>
+                    </div>
+
                 </section> -->
 
+                <section>
+                    <h2>Enums</h2>
+                    <div class="left">
+                        <ul>
+                            <li>Enums are some related constants, grouped as a type</li>
+                            <li>By default, enums are stored as int values</li>
+                            <li>By default, the items values start from zero</li>
+                            <li>Item values can be set explicitly</li>
+                            <li>If the value of an item is not set, it is one more than the value of the previous item</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section>
+                    <h2> Inheritance </h2>
+                    <ul>
+                        <li>A class can inherit from another class</li>
+                        <li>An inherited class is called sub-class or derived class</li>
+                        <li>A class that another class is inherited from is called base-class</li>
+                        <li>A derived class has all the members of the base class</li>
+                        <li>An object of a derived class, also is of type of the base class</li>
+                    </ul>
+
+                </section>
+
+                <section>
+                    <h2>Down Cast/Up Cast</h2>
+                    <div class="left" style="font-size:0.9em">
+                        <ul>
+                            <li>Up Cast: casting from object of sub-type to object of base-type.
+                                <ul>
+                                    <li>It is always valid and does not need an explicit cast</li>
+                                </ul>
+                            </li>
+                            <li>Down Cast: casting from object of base-type t object of sub-type.
+                                <ul>
+                                    <li>It requires an explicit cast</li>
+                                    <li>It may not be possible, and can cause an exception</li>
+                                </ul>
+                            </li>
+                            <li>Every object can be cast to <code class="blue">object</code> type</li>
+                            <li><code class="blue">is</code> keyword is used to check that if on object is of some specified type. It shows that
+                                if the cast is possible or not</li>
+                            <li><code class="blue">as</code> keyword check the possibility of a cast, and if possible, performs the cast,
+                                otherwise returns <code class="blue">null</code></li>
+                        </ul>
+                    </div>
+                </section>
+
             </section>
+
+
 
             <!-- TODO
                 <section>
